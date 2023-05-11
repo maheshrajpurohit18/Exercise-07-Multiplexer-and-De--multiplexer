@@ -47,22 +47,21 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
  
 ### Procedure
-```
-STEP 1:
+
+## STEP 1:
 Create a project with required entities.
 
-STEP 2:
+## STEP 2:
 Create a module along with respective file name for both Multiplexer and De-multiplexer.
 
-STEP 3:
+## STEP 3:
 Run the module and get the respective RTL outputs.
 
-STEP 4:
+## STEP 4:
 Create university program(VWF) for getting timing diagram.
 
-STEP 5:
+## STEP 5:
 Give the respective inputs for timing diagram and obtain the results.
-```
 
 
 
