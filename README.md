@@ -71,8 +71,21 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: MAHESH RAJPUROHIT.J
 RegisterNumber:  212222240058
 */
-
-
+```
+## MULTIPLEXER:
+module mux(a0,a1,a2,a3,s0,s1,y);
+input a0,a1,a2,a3,s0,s1;
+output y;
+wire p,q,r,s,s0c,s1c;
+not(s0c,s0);
+not(s1c,s1);
+and(p,s0c,s1c,a0);
+and(q,s0c,s1,a1);
+and(r,s0,s1c,a2);
+and(s,s0,s1,a3);
+or(y,p,q,r,s);
+endmodule 
+```
 
 
 
