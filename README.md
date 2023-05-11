@@ -48,6 +48,7 @@ If the control input changes to AB = 10, then all the gates are restricted excep
  
 ### Procedure
 /* 
+```
 STEP 1:
 Create a project with required entities.
 
@@ -62,6 +63,7 @@ Create university program(VWF) for getting timing diagram.
 
 STEP 5:
 Give the respective inputs for timing diagram and obtain the results.
+```
 */
 
 
