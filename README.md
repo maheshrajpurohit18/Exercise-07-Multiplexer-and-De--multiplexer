@@ -86,31 +86,44 @@ and(s,s0,s1,a3);
 or(y,p,q,r,s);
 endmodule 
 ```
-
-
-
+## DE-MULTIPLEXER:
+```
+module demux(I,S0,S1,Y0,Y1,Y2,Y3);
+input I,S0,S1;
+output Y0,Y1,Y2,Y3;
+wire S0C,S1C;
+not(S0C,S0);
+not(S1C,S1);
+and(Y0,I,S0C,S1C);
+and(Y1,I,S0C,S1);
+and(Y2,I,S0,S1C);
+and(Y3,I,S0,S1);
+endmodule
+```
 
 ### RTL LOGIC  
 
+## MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570563-e3640c39-0479-42ef-9255-40ddc75f6dbb.png)
 
-
-
-
-
+## DE-MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570580-7397b62b-b5d2-45ad-b9cf-5d25feb1ff7a.png)
 
 
 ### TIMING DIGRAMS  
+## MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570642-32d495ed-9cbd-4f07-93aa-ac5d7a5f64d4.png)
 
-
-
+## DE-MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570657-d153e7d8-f324-491c-9f27-e60aa11b0696.png)
 
 
 ### TRUTH TABLE 
+## MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570672-c4c54fba-e888-4e85-909d-bb227a111315.png)
 
-
-
-
-
+## DE-MULTIPLEXER
+![image](https://user-images.githubusercontent.com/118753139/241570682-d1c456ee-fa59-425b-95f2-f546380ac279.png)
 
 ### RESULTS 
-Thus the implementation of Multiplexer and Demultiplexer are verified
+Hence 4x1 Multiplexer and 1x4 Demultiplexer is been implemented and verified using verilog programming and its output are validated.
